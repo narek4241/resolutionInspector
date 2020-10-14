@@ -1,5 +1,8 @@
+import regeneratorRuntime from "regenerator-runtime";
+
 let obj = {}; // ok?rm
 obj.selector = "p"; // ok?rm
+window["objSel"] = obj; // ok?rm
 
 ((window, document) => {
   const { body } = document; // {param} #needsRes
