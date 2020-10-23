@@ -4,8 +4,8 @@
   "description": "Resolution Inspector (width x height)",
   "main": "index.js",
   "scripts": {
-    "build": "webpack",
-    "dev-server": "webpack-dev-server --open"
+    "build": "webpack --config webpack.prod.js",
+    "dev-server": "webpack-dev-server --open --config webpack.dev.js"
   },
   "repository": {
     "type": "git",
@@ -26,12 +26,15 @@
     "@babel/core": "^7.9.0",
     "@babel/preset-env": "^7.9.5",
     "babel-loader": "^8.1.0",
+    "clean-webpack-plugin": "^3.0.0",
     "html-loader": "^1.3.2",
     "html-webpack-plugin": "^4.5.0",
     "regenerator-runtime": "^0.13.7",
     "webpack": "^4.42.1",
+
     "webpack-cli": "^3.3.11",
-    "webpack-dev-server": "^3.11.0"
+    "webpack-dev-server": "^3.11.0",
+    "webpack-merge": "^5.2.0"
   },
   "dependencies": {}
 }
